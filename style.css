@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+.main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.card {
+    padding: 100px;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-size: 120%;
+    gap: 1rem;
+    color: white;
+}
+.logo {
+    width: 250px;
+}
+button {
+    background: red;
+    border: none;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size:0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+.botao1:hover {
+    transform: scale(1.05);
+}
+.card2 {
+    padding: 100px;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.mario {
+    width: 300px;
+}
+.caixa-video {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+.mascara {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    top: 0%;
+}
+.whats img {
+    position: fixed;
+    width: 5vw;
+    right: 1%;
+    bottom: 2%;
+    transition: 0.2s ease-in-out;
+}
+.whats img:hover{
+    transform: scale(1.1);
+}
+.card3 {
+    display: flex;
+    position: fixed;
+    top: 2%;
+    left: 1%;
+}
+.card3 img {
+    width: 50px; /* Tamanho fixo é mais seguro que % aqui */
+}
+.menu {
+    gap: 16px;
+    display: flex;
+    position: fixed;
+    left: 6%;
+    top: 5%;
+
+}
+.menu a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.5s;
+    padding: 10px; /* Aumenta a área de clique para mobile */
+}
+.menu a:hover {
+    color: red;
+    font-size: 22px;
+}
+.formulario {
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    top: 30%;
+    left: -240px;
+    position: fixed;
+    gap: 16px;
+    padding: 16px;
+    z-index: 1;
+    transition: left 1s ease-in-out
+}
+input {
+    padding: 10px;
+    padding-left: 5px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 1rem; /* Evita zoom automático no iOS */
+}
+textarea {
+    padding: 10px;
+    padding-left: 5px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    height: 100px;
+    width: 100%;
+}
+.mascaramento {
+    visibility: hidden;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0%; 
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    transition: visibility 1s ease-in-out;
+}
+
+@media (max-width: 900px) {
+    .main {
+        flex-direction:column;
+        height: auto;
+        padding: 80px 50px 80px 50px;
+    }
+    .card, .card2 {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+    .logo {
+        width: 80%;
+        max-width: 300px;
+    }
+    .mario {
+        width: 90%;
+        max-width: 350px;
+    }
+    .card3 img {
+        display: none;
+    }
+    .whats img {
+        width: 60px; /* Tamanho fixo para facilitar o toque */
+        right: 20px;
+        bottom: 20px;
+    }
+}

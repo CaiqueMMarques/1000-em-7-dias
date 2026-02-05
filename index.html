@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="card">
+        <img class="logo" src="/img/logo.png" alt="Super Mário Bros">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Cumque doloribus necessitatibus debitis,maxime vel veritatis ab optio similique fugiat unde. 
+            Molestias, minima est? Accusantium corporis fugiat necessitatibus, voluptatibus magnam quidem.</p>
+           <button onclick="formulario()" class="botao1">Entre em contato</button>
+        </div>
+        <div class="card2">
+            <img class="mario" src="./img/mario.png" alt="Mario e Luidi">
+        </div>
+        <div class="caixa-video">
+            <video class="video" src="./img/video.mp4" autoplay muted loop></video>
+            <div class="mascara"></div>
+        </div>
+            <a href="https://wa.me/5587992102619" target="_blank" class="whats">
+            <img src="./img/whatsapp.png" alt="whatsapp">
+        </a>
+        <div class="card3">
+            <img src="./img/logo-header.png" alt="Mario">
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Nosso Serviços</a>
+                <a href="#">Fale Conosco</a>
+            </div>
+        </div>
+            <form class="formulario"  
+            action="https://formcarry.com/s/2rEA74SA0yT"
+            method="POST"
+            enctype="multipart/form-data">
+                <input type="text" name="Nome" placeholder="Seu nome">
+                <input type="tel" name="Telefone" placeholder="Seu telefone">
+                <textarea placeholder="Mensagem" name="Dúvida"></textarea>
+                <button type="submit">Pedir orçamento</button>
+            </form>
+            <div class="mascaramento" onclick="esconder()"></div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
