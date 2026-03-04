@@ -3,8 +3,9 @@
 <br>Usei o Mario e o Luidi como exemplo de um serviço, no caso o deles é trabalhar como encanador. É como se fosse uma lading page.
 <br>
 <h2>Linguagens utilizadas</h2>
-<p></p>
-<p></p>
+<p>-HTML</p>
+<p>-CSS</p>
+<p>-JS</p>
 </h2>
 <br>
 <p align="center">Site para computadores desktop</p>
